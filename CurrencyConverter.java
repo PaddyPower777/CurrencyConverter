@@ -4,7 +4,7 @@ import ou.*;
  * Instances of this class are used to calculate the cost in pounds sterling
  * of buying a foreign currency.
  * 
- * @author M250 Module Team 
+ * @author Shane McFadden
  * @version 1.9
  */
 
@@ -103,7 +103,7 @@ public class CurrencyConverter
       commission = this.calculateCommission(amountOfCurrency);
       cost = commission + (amountOfCurrency / this.getExchangeRate());
       OUDialog.alert(amountOfCurrency + " " + this.getCurrencyName() 
-         + " cost £" + String.format("%.2f", cost));     
+         + " cost Â£" + String.format("%.2f", cost));     
    }
 
    /**
@@ -152,7 +152,7 @@ public class CurrencyConverter
    public void displayCommission(int amountOfCurrency)
    {
       OUDialog.alert("To buy " + amountOfCurrency + " " + this.getCurrencyName()
-         + " will entail a commission cost of £" 
+         + " will entail a commission cost of Â£" 
          + String.format("%.2f", this.calculateCommission(amountOfCurrency)));
    }
 
